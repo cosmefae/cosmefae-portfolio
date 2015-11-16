@@ -8,7 +8,7 @@ $mobile: 480px;
   }
 
   #content {
-    margin: 50px 30px 50px 30px;
+    margin: 50px 30px 10px 30px;
     .container { width: 100%; }
     footer {
       font-size: 1.7rem;
@@ -17,7 +17,7 @@ $mobile: 480px;
     }
   }
   #footer {
-    margin: 50px 30px 50px 30px;
+    margin: 0 30px 50px 30px;
     .txt-email {
       font-size: 1.4rem;
       line-height: 2rem;
@@ -27,6 +27,9 @@ $mobile: 480px;
     .social-list {
       margin-top: 10px;
       li { margin-right: 10px; }
+      .menu-dribbble { margin-top: 1px; }
+      .menu-behance a { background-size: 100%; }
+      .menu-github a { background-size: 95%; }
       a {
         background-size: 75%;
         height: 30px;

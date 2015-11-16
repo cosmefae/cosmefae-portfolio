@@ -24,7 +24,10 @@ div:after, ol:after, li:after, form:after, ul:after,
 dl:after, header:after, footer:after, section:after,
 article:after { content:"."; display:block; clear:both; height:0; overflow:hidden;}
 
+.transition { transition: all 200ms ease-in-out; }
+
 a {
+  @extend .transition;
   border-bottom: 1px dotted #4D4D4D;
   font-style: italic;
   font-weight: 400;
@@ -64,6 +67,7 @@ a {
       display: block;
       height: 40px;
       width: 50px;
+      &:hover { opacity: 0.7;}
     }
     &.menu-linkedin a { background-image: url(../img/logo-linkedin.svg); }
     &.menu-behance a { background-image: url(../img/logo-behance.svg); }
