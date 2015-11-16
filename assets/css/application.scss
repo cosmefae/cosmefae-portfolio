@@ -26,6 +26,7 @@ dl:after, header:after, footer:after, section:after,
 article:after { content:"."; display:block; clear:both; height:0; overflow:hidden;}
 
 .transition { transition: all 200ms ease-in-out; }
+.transition-slowly { transition: all 600ms ease-in-out; }
 
 a {
   @extend .transition;
@@ -37,7 +38,7 @@ a {
 }
 
 #content {
-  margin: 150px 0 80px 80px;
+  margin: 110px 0 80px 80px;
   .container {
     font-size: 5.8rem;
     line-height: 7.2rem;
@@ -91,4 +92,14 @@ a {
   .social-list {
     float: left;
   }
+}
+
+// Initial Animation
+.brand, .headline, .excerpt, #footer { @extend .transition-slowly; opacity: 0; transform: translateY(-10px); }
+.brand { transition-delay: 1s; }
+.headline { transition-delay: 1.5s; }
+.excerpt { transition-delay: 2s; }
+#footer { transition-delay: 2.5s; }
+.loaded {
+  .brand, .headline, .excerpt, #footer { opacity: 1; transform: translateY(0); }
 }

@@ -1,1 +1,0 @@
-var e="cosme",t="cosmefae",n=".com",r="mailto:"+e+"<strong>@</strong>"+t+n;$(".hide-email").attr("href",r).html(r);

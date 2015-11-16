@@ -10,4 +10,8 @@
 
 $(window).load(function() {
   NProgress.done();
+
+  setTimeout(function(){
+    $('body').addClass('loaded');
+  }, 200);
 });
