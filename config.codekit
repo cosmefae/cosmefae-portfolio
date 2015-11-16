@@ -79,6 +79,83 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/logo-114.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3709,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-114.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-114.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logo-120.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4033,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-120.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-120.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logo-144.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4757,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-144.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-144.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logo-152.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5056,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-152.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-152.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logo-32.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1015,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-32.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-32.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logo-57.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1872,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-57.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-57.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logo-72.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2325,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-72.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-72.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/application.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -90,23 +167,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/js\/min\/application-min.js": {
+	"\/assets\/js\/application.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/min\/application-min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/application-min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/min\/nprogress-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/min\/nprogress-min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/nprogress-min.min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/application.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/application.min.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -118,6 +184,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/nprogress.js",
 		"outputAbbreviatedPath": "\/assets\/js\/nprogress.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/nprogress.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/nprogress.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/nprogress.min.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
