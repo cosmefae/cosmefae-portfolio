@@ -1,1 +1,1 @@
-!function(){var a="cosme",e="cosmefae",m=".com",o='<a href="mailto:'+a+"@"+e+m+'">'+a+"<b>@</b>"+e+m+"</a>";$(".hide-email").html(o)}();
+!function(){var o="cosme",e="cosmefae",a=".com",r='<a href="mailto:'+o+"@"+e+a+'">'+o+"<b>@</b>"+e+a+"</a>";$(".hide-email").html(r),NProgress.start()}(),$(window).load(function(){NProgress.done()});
