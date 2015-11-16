@@ -1,0 +1,1 @@
+!function(){var a="cosme",e="cosmefae",m=".com",o='<a href="mailto:'+a+"@"+e+m+'">'+a+"<b>@</b>"+e+m+"</a>";$(".hide-email").html(o)}();

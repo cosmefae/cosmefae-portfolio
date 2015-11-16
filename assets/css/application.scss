@@ -1,1 +1,89 @@
 @import "normalize.css";
+@import "https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic";
+
+$brand-colour: #000;
+$spc: 30px;
+
+@mixin hide-text() {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+html { font-size: 62.5%; }
+body {
+  background-color: $brand-colour;
+  color: #fff;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+div:after, ol:after, li:after, form:after, ul:after,
+dl:after, header:after, footer:after, section:after,
+article:after { content:"."; display:block; clear:both; height:0; overflow:hidden;}
+
+a {
+  border-bottom: 1px dotted #4D4D4D;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: none;
+  &:hover { border-bottom: 1px dotted; }
+}
+
+#content {
+  margin: 150px 0 80px 80px;
+  .container {
+    font-size: 5.8rem;
+    line-height: 7.2rem;
+    width: 880px;
+  }
+  footer {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    width: 610px;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  li {
+    @include hide-text;
+    margin-right: $spc/1.5;
+    float: left;
+    &:last-child { margin-right: 0; }
+    a {
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      border: 0;
+      display: block;
+      height: 40px;
+      width: 50px;
+    }
+    &.menu-linkedin a { background-image: url(../img/logo-linkedin.svg); }
+    &.menu-behance a { background-image: url(../img/logo-behance.svg); }
+    &.menu-dribbble a { background-image: url(../img/logo-dribbble.svg); }
+    &.menu-github a { background-image: url(../img/logo-github.svg); }
+    &.menu-medium a { background-image: url(../img/logo-medium.svg); }
+  }
+}
+#footer {
+  margin: 0 0 80px 80px;
+  .txt-mail {
+    float: left;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #4D4D4D;
+    margin-right: $spc;
+    .hide-email { display: block; }
+    a { color: #A5A5A5; }
+  }
+  .social-list {
+    float: left;
+  }
+}

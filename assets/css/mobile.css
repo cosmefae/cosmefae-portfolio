@@ -1,0 +1,29 @@
+@media screen and (max-width: 480px) {
+  #content .container, #footer {
+    font-size: 2rem;
+    line-height: 2.8rem; }
+
+  #content {
+    margin: 50px 30px 50px 30px; }
+    #content .container {
+      width: 100%; }
+    #content footer {
+      font-size: 1.7rem;
+      line-height: 2.2rem;
+      width: 80%; }
+
+  #footer {
+    margin: 50px 30px 50px 30px; }
+    #footer .txt-email {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #6D6D6D;
+      margin-right: 0; }
+    #footer .social-list {
+      margin-top: 10px; }
+      #footer .social-list li {
+        margin-right: 10px; }
+      #footer .social-list a {
+        background-size: 75%;
+        height: 30px;
+        width: 40px; } }
