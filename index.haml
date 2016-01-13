@@ -4,7 +4,7 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     %title Cosme Faé - Product Designer
-    %meta{:content => "", :name => "description"}/
+    %meta{:content => "Cosme Faé is a multidisciplinary designer helping teams build first-class digital products with UI and Front-end Development.", :name => "description"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
 
     %meta{:content => "#000000", :name => "theme-color"}/
@@ -23,15 +23,17 @@
     %link{:href => "assets/css/mobile.css", :rel => "stylesheet"}/
   %body
     %section#content
-      .container
-        %img{:src => "assets/img/logo-cf.svg", :class => "brand"}
+      .container{:itemscope => true, :itemtype => "http://schema.org/Person"}>
+        %a{:href => "http://cosmefae.com", :itemprop => "url", :class => "link-brand"}
+          %img{:src => "assets/img/logo-cf.svg", :class => "brand"}
 
         %p.headline
-          Cosme Faé is a
-          %strong multidisciplinary designer
+          %span{:itemprop => "name"} Cosme Faé
+          is a
+          %strong{:itemprop => "jobtitle"} multidisciplinary designer
           helping teams
           %strong build first-class digital products
-          with UI and Front-end Development.
+          \.
 
         %footer.excerpt
           %p

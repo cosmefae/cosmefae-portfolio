@@ -37,6 +37,8 @@ a {
   &:hover { border-bottom: 1px dotted; }
 }
 
+.link-brand, .link-brand:hover, .link-brand:active { border: 0; text-decoration: none; }
+
 #content {
   margin: 110px 0 80px 80px;
   .container {
