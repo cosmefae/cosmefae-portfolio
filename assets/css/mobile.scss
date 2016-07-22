@@ -2,39 +2,74 @@ $mobile: 480px;
 
 
 @media screen and (max-width: $mobile) {
-  #content .container, #footer {
+  .container, #intro .container {
+    width: 90%; margin:auto;
+  }
+  #header {
+    top: 0;
+    left: 16px;
+    .brand { background-size: 45px; width: 50px; }
+    h1 small { top: -5px; font-size: 1.1rem; margin-left: 10px; opacity: 1; }
+    .item-works { font-size: 1.2rem !important; margin-top: 26px !important; }
+  }
+
+  #intro {
+    margin: 100px 0 0 0;
+    width: 100%;
+    .headline {
+      font-size: 2.5rem;
+      line-height: 3.4rem;
+    }
+    footer {
+      font-size: 1.8rem;
+      width: 100%;
+      line-height: 2.8rem;
+    }
+    .dropline {
+      margin-bottom: 60px;
+      .txt-mail { font-size: 1.4rem; }
+    }
+  }
+  #works {
+    header {
+      left: 0;
+      .title-main {
+        font-size: 6rem;
+        line-height: 7rem;
+       }
+      small { margin-top: 0; color: #fff; opacity: .75; }
+    }
+    figure {
+      overflow: hidden; height: 300px; width: 110%;
+      img { opacity: .6; width: 200%; }
+    }
+    article {
+      margin-bottom: 10px;
+      &:nth-child(even) figure { margin-left: 4%; }
+      &:nth-child(odd) figure { margin-right: 2%; }
+    }
+    .more-works { display: none; }
+  }
+  #hello h3 { margin: 30px 0 0 0; }
+
+  .post p {
     font-size: 2rem;
     line-height: 2.8rem;
   }
 
-  #content {
-    margin: 20px 30px 10px 30px;
-    .container { width: 100%; }
-    footer {
-      font-size: 1.7rem;
-      line-height: 2.2rem;
-      width: 80%;
-    }
-  }
-  #footer {
-    margin: 0 30px 50px 30px;
-    .txt-email {
-      font-size: 1.4rem;
-      line-height: 2rem;
-      color: #6D6D6D;
-      margin-right: 0;
-    }
-    .social-list {
-      margin-top: 10px;
-      li { margin-right: 10px; }
-      .menu-dribbble { margin-top: 1px; }
-      .menu-behance a { background-size: 100%; }
-      .menu-github a { background-size: 95%; }
-      a {
-        background-size: 75%;
-        height: 30px;
-        width: 40px;
+  .single {
+    padding-top: 90px;
+    &.work {
+      figure { margin: 0; }
+      .title-main {
+        font-size: 3rem;
+        line-height: 4rem; }
+      .entry-content { margin: 0; }
+      .post p {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
       }
+      iframe { display: none; }
     }
   }
 }

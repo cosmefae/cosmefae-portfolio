@@ -1,12 +1,15 @@
 @import "normalize.css";
-@import "nprogress.css";
 @import "https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic";
+@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic";
+@import "https://fonts.googleapis.com/css?family=Oswald:700";
+@import "nprogress.css";
 
 $brand-colour: #000;
+$yellow-colour: #f9ec18;
+$links-colour: #19c4aa;
 $spc: 30px;
 
 @mixin hide-text() {
-  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -34,16 +37,66 @@ a {
   font-style: italic;
   font-weight: 400;
   text-decoration: none;
-  &:hover { border-bottom: 1px dotted; }
+  &:hover { border-bottom-style: none; color: #ccc; }
 }
+
+.container {
+  margin: auto;
+  position: relative;
+  width: 978px;
+}
+
+section, #header {
+  @extend .transition-slowly;
+  opacity: 0;
+}
+.loaded section, .loaded #header { opacity: 1; }
 
 .link-brand, .link-brand:hover, .link-brand:active { border: 0; text-decoration: none; }
 
-#content {
-  margin: 110px 0 80px 80px;
+.bg-yellow { background-color: #fcb937; border-radius:4px; }
+.bg-green { background-color: #076469; border-radius:4px; }
+.bg-white { background-color: #fff; border-radius:4px; }
+.bg-greenblue { background-color: #26b4a9; border-radius:4px; }
+
+h1 small {
+  font:italic 1.3rem 'Playfair Display', serif;
+  font-weight: normal;
+  display: inline-block;
+  margin-left: 20px;
+  opacity: .45;
+  position: relative;
+  top: -2px;
+  letter-spacing: 1px;
+  a {
+    color: $links-colour;
+    border-bottom: 1px solid $links-colour;
+    &:hover { opacity: .7; border-bottom: 1px solid $links-colour; color: $links-colour; }
+  }
+}
+
+#header {
+  position: fixed;
+  top: 50px; left: 80px; right: 0; z-index: 9;
+  width: 90%;
+}
+
+.brand {
+  span { @include hide-text(); }
+  display: inline-block;
+  background: url('../img/logo-cf.png') no-repeat center center;
+  width: 67px; height: 67px;
+  background-size: 67px;
+  img { width: 100%; }
+}
+
+#intro {
+  margin: 200px 0 0 80px;
+  font-family: 'Playfair Display', serif;
   .container {
     font-size: 5.8rem;
     line-height: 7.2rem;
+    margin: 0;
     width: 880px;
   }
   footer {
@@ -54,10 +107,19 @@ a {
       color: #fff;
     }
   }
+  .link-readbio {
+    border-bottom: 1px solid $links-colour;
+    color: $links-colour;
+    font-size: 1.4rem;
+    margin-left: 6px;
+    position: relative;
+    text-transform: lowercase;
+    top: -5px;
+    &:hover { opacity: .7; }
+  }
 }
-
 .social-list {
-  margin: 0;
+  margin: 15px 0 0 0;
   padding: 0;
   li {
     @include hide-text;
@@ -80,10 +142,9 @@ a {
     &.menu-medium a { background-image: url(../img/logo-medium.svg); }
   }
 }
-#footer {
-  margin: 0 0 80px 80px;
+.dropline {
+  margin: 0 0 80px 0;
   .txt-mail {
-    float: left;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: #4D4D4D;
@@ -91,17 +152,135 @@ a {
     .hide-email { display: block; }
     a { color: #A5A5A5; }
   }
-  .social-list {
-    float: left;
+}
+
+
+
+#works {
+  // margin-top: $spc*2;
+  article {
+    margin-bottom: $spc*6; position: relative;
+    &:hover figure img { transform:scale(1.007); opacity: .9; }
+  }
+  header {
+    width: 100%; position: absolute; left: -50px; right: 0; top: 25%; z-index: 2;
+    .title-main {
+      font:bold 8rem Oswald, sans-serif;
+      letter-spacing: 10px;
+      color: #fff;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    small {
+      color: #808080;
+      text-transform: uppercase;
+      font: italic 1.2rem Lato, sans-serif;
+      margin-top: -15px;
+      display: block;
+    }
+  }
+  figure {
+    background-color: #000;
+    margin: 0;
+    float: right; width: 760px; height: 400px; position: relative; z-index: 1;
+    img {
+      @extend .transition-slowly;
+      opacity: .77;
+      width: 100%;
+    }
+  }
+  article:nth-child(even) {
+    header { right: -50px; left: 0; }
+    figure { float: left; }
+    .title-main, small { text-align: right; }
   }
 }
 
+#hello {
+  padding-top: $spc;
+  h3 {
+    color: $yellow-colour; font:italic 6rem 'Playfair Display', serif;
+    margin-bottom: $spc;
+    text-align: center;
+  }
+}
+.post {
+  p {
+    font:3.2rem/4.4rem 'Playfair Display', serif;
+    color: #fff;
+    a {
+      font-style: normal; border-bottom:1px solid $links-colour; color: $links-colour;
+      &:hover { opacity: .7; }
+    }
+  }
+}
+
+.home .item-works { visibility: hidden; display: none; @include hide-text; }
+
+.single {
+  padding-top: 200px;
+  &.work {
+    #header .item-works {
+      color: #fff;
+      font-size: 1.4rem;
+      display: inline-block;
+      float: right;
+      margin-top: 40px;
+      padding-left: 30px;
+      background: rgba(0, 0, 0, 0) url("../img/icn-arrow-left.svg") no-repeat scroll left 0 / 32px auto;
+      border:0;
+      &:hover .icn-arrow-left {
+        @extend .transition;
+        transform: translateX(-3px);
+      }
+    }
+    #header h1 { float: left; }
+
+    .cover-work img { width: 100%; }
+    .title-main { font:italic 5.2rem/5.4rem 'Playfair Display', serif; font-weight: bold; }
+    .entry-content { margin: $spc*2 0; }
+    .gallery {
+      img { width: 100%; }
+      iframe { margin:30px auto auto 25%; }
+      a { border-bottom: 0; }
+    }
+    h3 { font:italic 3.2rem/4.4rem 'Playfair Display', serif; }
+  }
+}
+
+.more-works {
+  margin-bottom: $spc !important;
+  text-align: center;
+  font:italic 1.2rem 'Playfair Display', serif;
+}
+
+.icn-sketch { width: 18px !important; height: 22px; }
+.icn-arrow-left { position: relative; top: 10px; }
+
+#footer {
+  margin: $spc*5 auto $spc auto;
+  font:1.4rem 'Playfair Display', serif;
+  opacity: .2;
+  text-align: center;
+  svg {
+    width: 16px;
+    position: relative; top: 5px;
+    display: inline-block;
+    margin: 0 4px;
+    path { fill: #fff; }
+  }
+}
+
+
+
 // Initial Animation
-.brand, .headline, .excerpt, #footer { @extend .transition-slowly; opacity: 0; transform: translateY(-10px); }
-.brand { transition-delay: 1s; }
+h1, .headline, .excerpt, .dropline { @extend .transition-slowly; opacity: 0; transform: translateY(-10px); }
+h1 { transition-delay: 1s; }
 .headline { transition-delay: 1.5s; }
 .excerpt { transition-delay: 2s; }
-#footer { transition-delay: 2.5s; }
+.dropline { transition-delay: 2.5s; }
 .loaded {
-  .brand, .headline, .excerpt, #footer { opacity: 1; transform: translateY(0); }
+  h1, .headline, .excerpt, .dropline { opacity: 1; transform: translateY(0); }
 }
+
+@import "mobile";
