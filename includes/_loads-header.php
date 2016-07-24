@@ -15,4 +15,4 @@
 <link href="<?=$url; ?>/assets/img/logo-57.png" rel="apple-touch-icon-precomposed">
 <link href="<?=$url; ?>/assets/img/logo-32.png" rel="icon" sizes="32x32">
 
-<link href="<?=$url; ?>/assets/css/application.css" rel="stylesheet">
+<link href="<?=$url; ?>/assets/css/application.min.css" rel="stylesheet">
