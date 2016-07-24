@@ -263,7 +263,12 @@ h1 small {
   font: 1.4rem 'Playfair Display', serif;
   line-height: 2rem;
   article {
+    @extend .transition;
     float: left; width: 20.333%; padding: 0 2%;
+
+    &.mouse_over { opacity: 1; }
+    &.out { opacity: .45; }
+
     header {
       font-size: 2rem; font-style: italic;
       small { font-size: 1.2rem; font-weight: normal; }

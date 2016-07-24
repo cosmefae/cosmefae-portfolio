@@ -21,7 +21,7 @@ article:after {
   height: 0;
   overflow: hidden; }
 
-.transition, a, .single.work #header .item-works:hover .icn-arrow-left {
+.transition, a, .single.work #header .item-works:hover .icn-arrow-left, #extra-content article {
   transition: all 200ms ease-in-out; }
 
 .transition-slowly, section, #header, #works figure img, h1, .headline, .excerpt, .dropline {
@@ -295,6 +295,10 @@ h1 small {
     float: left;
     width: 20.333%;
     padding: 0 2%; }
+    #extra-content article.mouse_over {
+      opacity: 1; }
+    #extra-content article.out {
+      opacity: .45; }
     #extra-content article header {
       font-size: 2rem;
       font-style: italic; }

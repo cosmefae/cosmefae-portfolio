@@ -28,6 +28,18 @@
   });
 
   $('.svg').inlineSVG();
+
+  $('#extra-content article').each(function(e) {
+    var all_list = $('#extra-content article');
+
+    $(this).mouseenter(function() {
+      all_list.addClass('out');
+      $(this).removeClass('out').addClass('mouse_over');
+    }).mouseleave(function() {
+      all_list.removeClass('mouse_over out');
+    });
+  });
+
 })();
 
 window.scrollTo(0, 0);
