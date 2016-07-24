@@ -227,7 +227,7 @@ h1 small {
       float: right;
       margin-top: 40px;
       padding-left: 30px;
-      background: rgba(0, 0, 0, 0) url("../img/icn-arrow-left.svg") no-repeat scroll left 0 / 32px auto;
+      background: rgba(0, 0, 0, 0) url("../img/icn-arrow-left.svg") no-repeat scroll left -7px/25px auto;
       border:0;
       &:hover .icn-arrow-left {
         @extend .transition;
@@ -242,7 +242,7 @@ h1 small {
     .gallery {
       img { width: 100%; }
       iframe { margin:30px auto auto 25%; }
-      a { border-bottom: 0; }
+      a {  }
     }
     h3 { font:italic 3.2rem/4.4rem 'Playfair Display', serif; }
   }
@@ -256,6 +256,40 @@ h1 small {
 
 .icn-sketch { width: 18px !important; height: 22px; }
 .icn-arrow-left { position: relative; top: 10px; }
+
+
+#extra-content {
+  margin: 100px 0 0 0;
+  font: 1.4rem 'Playfair Display', serif;
+  line-height: 2rem;
+  article {
+    float: left; width: 20.333%; padding: 0 2%;
+    header {
+      font-size: 2rem; font-style: italic;
+      small { font-size: 1.2rem; font-weight: normal; }
+    }
+    ul { padding: 0; }
+    li {
+      list-style: none;
+      border-bottom: 1px solid rgba(210, 208, 208, 0.15);
+      &:last-child { border-bottom: 0; }
+      &:hover {
+        border-color: #19c4aa;
+      }
+    }
+    a {
+      font-style: normal; color: #fff;
+      border-bottom: 0;
+      text-decoration: none;
+      display: block;
+      padding: 20px 0;
+      s { opacity: .7; }
+      &:hover {
+        color: #19c4aa;
+      }
+    }
+  }
+}
 
 #footer {
   margin: $spc*5 auto $spc auto;

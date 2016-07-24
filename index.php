@@ -137,6 +137,59 @@
       </div>
     </section>
 
+    <section id="extra-content">
+      <div class="container">
+
+        <article>
+          <header>
+            <h3>Speaking</h3>
+          </header>
+
+          <ul>
+            <li><a href="http://www.meetup.com/esc-conf/events/229818609/" target="_blank"><s>May 4th <strong>— Rio de Janeiro, ESC Conf: E01</strong></s></a></li>
+            <?php /* <li><a href="#" class="btn">I can speak at your conference ;)</a></li> */ ?>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h3>Courses <small><em>(in portuguese)</em></small></h3>
+          </header>
+
+          <ul>
+            <li><a href="http://projetoarea51.com.br/produto/curso-de-wordpress/?ref=cosmefm" target="_blank" tite="Original title: WordPress para quem não sabe programar">WordPress for Non-Developers<strong>— Área 51</strong></a></li>
+            <li><a href="https://www.udemy.com/aprenda-sketch-design/" target="_blank" tite="Original title: Design de aplicativos com Sketch 3">Mobile App Design In Sketch 3 <strong>— Udemy</strong></a></li>
+            <?php /* <li><a href="#">May my course in your company. We can talk about...</a></li>*/ ?>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h3>Awards</h3>
+          </header>
+
+          <ul>
+            <li><a href="http://unmatchedstyle.com/gallery/cosme-fae.php" target="_blank">Unmatched Style <strong>— Inspiration gallery (with editor review)</strong></a></li>
+            <li><a href="https://designshack.net/design/cosme-fa-product-designer/" target="_blank">Design Shack <strong>— Inspiration gallery</strong></a></li>
+            <li><a href="http://cssreel.com/Website/cosme-fae-product-designer" target="_blank">CSSREEL <strong>— Inspiration gallery</strong></a></li>
+            <li><a href="http://startupdev.com.br/rumble/en/projects" target="_blank">Startup DEV RUMBLE <strong>— 3rd place (48h Hackathon)</strong></a></li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h3>Writing</h3>
+          </header>
+
+          <ul>
+            <li><a href="https://medium.com/@cosmefae/5-reasons-for-your-projects-still-into-the-locker-3eab949710b1" target="_blank">5 reasons for your project still into the locker <strong>— Medium</strong></a></li>
+            <li><a href="https://medium.com/@cosmefae/5-raz%C3%B5es-para-seus-projetos-estarem-na-gaveta-392c03f16c62" target="_blank">5 razões para seus projetos estarem na gaveta <strong>— Medium</strong></a></li>
+            <li><a href="https://medium.com/@cosmefae/30-fans-showcase-4e928c40bd28" target="_blank">30 Fans - Showcase <strong>— Medium</strong></a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
 <?php require_once("includes/footer.php"); ?>
   </body>
 </html>
