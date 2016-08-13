@@ -3,6 +3,9 @@
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic";
 @import "https://fonts.googleapis.com/css?family=Oswald:700";
 @import "nprogress.css";
+@import "slick";
+@import "slick-theme";
+
 
 $brand-colour: #000;
 $yellow-colour: #f9ec18;
@@ -22,6 +25,7 @@ body {
   color: #fff;
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 div:after, ol:after, li:after, form:after, ul:after,
@@ -30,6 +34,12 @@ article:after { content:"."; display:block; clear:both; height:0; overflow:hidde
 
 .transition { transition: all 200ms ease-in-out; }
 .transition-slowly { transition: all 600ms ease-in-out; }
+
+.gall .slick-slide { margin-right: 20px; outline: none !important; }
+.grabbing { cursor:url(../img/grabbing.png) 8 8, move; }
+.slick-active:focus { outline: none !important; }
+
+hr { clear: both; border: 0; }
 
 a {
   @extend .transition;
@@ -62,6 +72,7 @@ section, #header {
 h1 small {
   font:italic 1.3rem 'Playfair Display', serif;
   font-weight: normal;
+  text-decoration: line-through;
   display: inline-block;
   margin-left: 20px;
   opacity: .45;
@@ -205,8 +216,8 @@ h1 small {
   }
 }
 .post {
-  p {
-    font:3.2rem/4.4rem 'Playfair Display', serif;
+  p, li {
+    font:2.2rem/3.2rem 'Playfair Display', serif;
     color: #fff;
     a {
       font-style: normal; border-bottom:1px solid $links-colour; color: $links-colour;
@@ -219,6 +230,21 @@ h1 small {
 
 .single {
   padding-top: 200px;
+  article {
+    margin-top: 5%;
+    padding-top: 5%; position: relative;
+    &::after {
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      top: 2%;
+      left: 64%;
+      width: 15px;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.35);
+      margin-left: -15%; }
+    &.no-sep::after { display: none; }
+  }
   &.work {
     #header .item-works {
       color: #fff;
@@ -237,7 +263,18 @@ h1 small {
     #header h1 { float: left; }
 
     .cover-work img { width: 100%; }
-    .title-main { font:italic 5.2rem/5.4rem 'Playfair Display', serif; font-weight: bold; }
+    h2, h3 { font:italic 3.2rem/3.4rem 'Playfair Display', serif; font-weight: bold; display: inline-block; position: relative; }
+    h2::after, h3::after {
+      background-color: #19c4aa;
+      position: absolute;
+      content: " ";
+      display: block;
+      height: 50%;
+      width: 70%;
+      left: -7%;
+      bottom: -5px;
+      z-index: -1; }
+    .title-main { font:italic 5.2rem/5.4rem 'Playfair Display', serif; font-weight: bold; margin-bottom: -10%; }
     .entry-content { margin: $spc*2 0; }
     .gallery {
       img { width: 100%; }
@@ -247,6 +284,42 @@ h1 small {
     h3 { font:italic 3.2rem/4.4rem 'Playfair Display', serif; }
   }
 }
+
+.grid-center, .grid-left, .grid-right {
+  ul { padding: 0; }
+  p, li { font-size: 1.5rem; list-style: none;
+    line-height: 2.3rem; }
+  li { margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.55);}
+  .high {
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-style: italic;
+    color: #fff;
+    &::after {
+      background-color: #19c4aa;
+      position: absolute;
+      content: " ";
+      display: block;
+      height: 50%;
+      width: 7%;
+      left: -2%;
+      bottom: 0px;
+      z-index: -1;}
+  }
+}
+
+.grid-center {text-align: center; width: 70%; margin: auto;}
+.grid-left {
+  text-align: left; float: left; width: 30%; margin-left: 5%;
+}
+.grid-right {
+  text-align: left; float: right; width: 55%; margin-right: 0;
+}
+
 
 .more-works {
   margin-bottom: $spc !important;
@@ -320,6 +393,13 @@ h1 { transition-delay: 1s; }
 .dropline { transition-delay: 2.5s; }
 .loaded {
   h1, .headline, .excerpt, .dropline { opacity: 1; transform: translateY(0); }
+}
+
+
+#gall .item img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 @import "mobile";

@@ -40,6 +40,19 @@
     });
   });
 
+
+  $(".gall").slick({
+    arrows: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    variableWidth: true
+  }).mousedown(function() {
+    $(this).addClass('grabbing');
+  }).mouseup(function() {
+    $(this).removeClass('grabbing');
+  });
+
 })();
 
 window.scrollTo(0, 0);

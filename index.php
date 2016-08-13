@@ -131,7 +131,7 @@
             <p>If you liked my work and want to see more about my background experience you can see on <a href="https://linkedin.com/in/cosmefae" target="_blank">Linkedin</a>.
             And feel free to drop me a line, or two: <span class="hide-email"></span></p>
 
-            <p>I'm available <span class="hide-email-hire">for hire</span>!</p>
+            <p><s>I'm available <span class="hide-email-hire">for hire</span>!</s></p>
           </div>
         </article>
       </div>

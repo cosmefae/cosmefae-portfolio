@@ -20,6 +20,7 @@
   <script src="<?=$url; ?>/assets/js/skrollr.run.js"></script>
 <?php } ?>
 
+    <script src="<?=$url; ?>/assets/js/slick.min.js"></script>
     <script src="<?=$url; ?>/assets/js/application.js"></script>
 
     <!-- Google Analytics -->
