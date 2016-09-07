@@ -169,6 +169,9 @@
           </header>
 
           <ul>
+            <li><a href="http://www.webdesignerdepot.com/2016/08/the-best-new-portfolio-sites-august-2016/" target="_blank">Webdesigner Depot <strong>— The best new portfolio sites (with editor review)</strong></a></li>
+            <li><a href="http://www.frenchdesignindex.com/design-index-11929" target="_blank">French Design Index <strong>— Site Of The Day</strong></a></li>
+
             <li><a href="http://unmatchedstyle.com/gallery/cosme-fae.php" target="_blank">Unmatched Style <strong>— Inspiration gallery (with editor review)</strong></a></li>
             <li><a href="https://designshack.net/design/cosme-fa-product-designer/" target="_blank">Design Shack <strong>— Inspiration gallery</strong></a></li>
             <li><a href="http://cssreel.com/Website/cosme-fae-product-designer" target="_blank">CSSREEL <strong>— Inspiration gallery</strong></a></li>

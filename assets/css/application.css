@@ -235,6 +235,12 @@ article:after {
   margin-right: 20px;
   outline: none !important; }
 
+.gall {
+  cursor: url(../img/grab.png) 8 8, move; }
+
+.gall img {
+  border-radius: 5px; }
+
 .grabbing {
   cursor: url(../img/grabbing.png) 8 8, move; }
 
@@ -466,10 +472,18 @@ h1 small {
 
 .single {
   padding-top: 200px; }
+  .single .section {
+    padding: 7% 0; }
+    .single .section.odd {
+      background: rgba(255, 255, 255, 0.1); }
   .single article {
-    margin-top: 5%;
-    padding-top: 5%;
     position: relative; }
+    .single article article {
+      background: transparent;
+      margin-top: 0; }
+    .single article:first-child {
+      margin-top: 0;
+      padding-top: 0; }
     .single article::after {
       display: inline-block;
       position: absolute;

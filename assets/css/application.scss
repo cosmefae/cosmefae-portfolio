@@ -36,6 +36,8 @@ article:after { content:"."; display:block; clear:both; height:0; overflow:hidde
 .transition-slowly { transition: all 600ms ease-in-out; }
 
 .gall .slick-slide { margin-right: 20px; outline: none !important; }
+.gall { cursor:url(../img/grab.png) 8 8, move; }
+.gall img { border-radius:5px; }
 .grabbing { cursor:url(../img/grabbing.png) 8 8, move; }
 .slick-active:focus { outline: none !important; }
 
@@ -228,11 +230,19 @@ h1 small {
 
 .home .item-works { visibility: hidden; display: none; @include hide-text; }
 
+
 .single {
   padding-top: 200px;
+  .section {
+    padding: 7% 0;
+    &.odd { background: rgba(255, 255, 255, 0.1); }
+   }
+
   article {
-    margin-top: 5%;
-    padding-top: 5%; position: relative;
+
+    article { background: transparent; margin-top: 0; }
+     position: relative;
+    &:first-child { margin-top: 0; padding-top: 0; }
     &::after {
       display: inline-block;
       position: absolute;
@@ -284,6 +294,7 @@ h1 small {
     h3 { font:italic 3.2rem/4.4rem 'Playfair Display', serif; }
   }
 }
+
 
 .grid-center, .grid-left, .grid-right {
   ul { padding: 0; }
