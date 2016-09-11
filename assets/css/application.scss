@@ -37,9 +37,14 @@ article:after { content:"."; display:block; clear:both; height:0; overflow:hidde
 
 .gall .slick-slide { margin-right: 20px; outline: none !important; }
 .gall { cursor:url(../img/grab.png) 8 8, move; }
-.gall img { border-radius:5px; }
+aside img { border-radius:5px; }
 .grabbing { cursor:url(../img/grabbing.png) 8 8, move; }
 .slick-active:focus { outline: none !important; }
+
+.show-images-2 {
+  width: 780px; margin: auto;
+  img { margin-right: 10px; }
+}
 
 hr { clear: both; border: 0; }
 

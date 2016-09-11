@@ -238,7 +238,7 @@ article:after {
 .gall {
   cursor: url(../img/grab.png) 8 8, move; }
 
-.gall img {
+aside img {
   border-radius: 5px; }
 
 .grabbing {
@@ -246,6 +246,12 @@ article:after {
 
 .slick-active:focus {
   outline: none !important; }
+
+.show-images-2 {
+  width: 780px;
+  margin: auto; }
+  .show-images-2 img {
+    margin-right: 10px; }
 
 hr {
   clear: both;
