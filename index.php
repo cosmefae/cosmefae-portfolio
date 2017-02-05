@@ -126,9 +126,12 @@
               to multinational corp. I have worked during this time with e-commerces, intranets and mobile apps. I have a
               passion for new products, ideas and startups.</p>
 
-            <p>Nowadays, I’m working on a small design squad at Petrobras. In my spare time, I help to make side projects as <a href="https://itunes.apple.com/br/app/anitta-oficial/id722242803?mt=8" rel="nofollow" target="_blank">Anitta</a> and <a href="https://jackfreeze.com.br" rel="nofollow" target="_blank">Jack Freeze</a>.
+            <p>Nowadays, I’m working on a small design squad in a fintech startup. In my spare time, I help to make sexy side projects as
+              <a href="https://itunes.apple.com/br/app/anitta-oficial/id722242803?mt=8" rel="nofollow" target="_blank">Anitta</a> and
+              <a href="https://jackfreeze.com.br" rel="nofollow" target="_blank">Jack Freeze</a>.
 
-            <p>If you liked my work and want to see more about my background experience you can see on <a href="https://linkedin.com/in/cosmefae" target="_blank">Linkedin</a>.
+            <p>If you liked my work and want to see more about my background experience you can see on
+              <a href="https://linkedin.com/in/cosmefae" target="_blank">Linkedin</a>.
             And feel free to drop me a line, or two: <span class="hide-email"></span></p>
 
             <p><s>I'm available <span class="hide-email-hire">for hire</span>!</s></p>
