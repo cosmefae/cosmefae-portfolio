@@ -126,7 +126,7 @@
               to multinational corp. I have worked during this time with e-commerces, intranets and mobile apps. I have a
               passion for new products, ideas and startups.</p>
 
-            <p>Nowadays, I’m working on a small design squad in a fintech startup. In my spare time, I help to make sexy side projects as
+            <p>Nowadays, <strong>I’m working on a small design squad in a fintech startup.</strong> In my spare time, I help to make sexy side projects as
               <a href="https://itunes.apple.com/br/app/anitta-oficial/id722242803?mt=8" rel="nofollow" target="_blank">Anitta</a> and
               <a href="https://jackfreeze.com.br" rel="nofollow" target="_blank">Jack Freeze</a>.
 
