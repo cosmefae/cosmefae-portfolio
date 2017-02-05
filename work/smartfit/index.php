@@ -87,9 +87,9 @@
                 <div class="gall">
                   <div><img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Intro 03.png" alt=""></div>
                   <div><img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Acesse.png" alt=""></div>
-                  <div><img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Agenda Série 05 (actived).png" alt=""></div>
+                  <div><img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Agenda Serie 05 (actived).png" alt=""></div>
                   <div><img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Menu Opened.png" alt=""></div>
-                  <div><img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Agenda Série 04.png" alt=""></div>
+                  <div><img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Agenda Serie 04.png" alt=""></div>
                 </div>
               </aside>
             </section>
@@ -153,8 +153,8 @@
                   </p>
                 </article>
                 <aside class="no-sep show-images-2">
-                    <div><img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Agenda Série 06.png" alt="">
-                      <img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Agenda Série 08.png" alt=""></div>
+                    <div><img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Agenda Serie 06.png" alt="">
+                      <img src="<?=$url; ?>/resize.php?w=375&img=/portfolio/work/smartfit/Agenda Serie 08.png" alt=""></div>
                 </aside>
               </div>
             </section>
